@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Fotoku</title>
+    <title>Maison Ali Menu</title>
     <style>
         body {
             margin: 0;
+            padding: 0;
+            background-color: #121212;
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #121212;
         }
-        /* Kode CSS untuk memblokir klik kanan dan sentuhan lama pada foto */
+        /* Kode baru agar gambar penuh ke samping dan bisa di-scroll ke bawah */
         img {
-            max-width: 90%;
-            max-height: 90vh;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-            pointer-events: none; /* Foto tidak bisa diklik atau ditekan lama */
-            -webkit-touch-callout: none; /* Blokir menu download di HP Safari/Chrome */
+            width: 100%;
+            max-width: 600px; /* Batas lebar maksimal agar tetap rapi di layar lebar */
+            height: auto;
+            display: block;
+            pointer-events: none; /* Tetap mengunci foto agar tidak bisa di-download mudah */
+            -webkit-touch-callout: none;
             -webkit-user-select: none;
             user-select: none;
         }
     </style>
 </head>
-<body oncontextmenu="return false;"> <!-- Blokir klik kanan di browser -->
-    <img src="foto.jpg" alt="My Photo">
+<body oncontextmenu="return false;">
+    <!-- Pastikan nama file di bawah ini sesuai dengan nama foto menu kamu di GitHub -->
+    <img src="foto.jpg" alt="Maison Ali Menu">
 </body>
 </html>
