@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Fotoku</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #121212;
+        }
+        /* Kode CSS untuk memblokir klik kanan dan sentuhan lama pada foto */
+        img {
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            pointer-events: none; /* Foto tidak bisa diklik atau ditekan lama */
+            -webkit-touch-callout: none; /* Blokir menu download di HP Safari/Chrome */
+            -webkit-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;"> <!-- Blokir klik kanan di browser -->
+    <img src="foto.jpg" alt="My Photo">
+</body>
+</html>
